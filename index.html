@@ -86,20 +86,25 @@
             border-radius: 12px;
             margin-bottom: 16px;
         }
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
-    <div class="card" this-is-a-card>
+    <div class="card" this-is-a-card="">
       <img src="assets/images/illustration-article.svg" alt="HTML & CSS Foundations" class="illustration">
         <div class="learning-badge">Learning</div>
         <div class="published-date">Published 18 June 2025</div>
         <h1> 
-            <a class='kinda-link' onclick='whatevs()'>HTML & CSS Foundation</a>
+            <a class='kinda-link' onclick='whatevs(https://www.frontendmentor.io/profile/pninopratama)'>HTML & CSS Foundation</a>
         </h1>
         <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
         <div class="author">
             <div class="author-avatar">
-              <img src="assets/images/favicon-32x32.png" style="width: 100%; height: 100%; border-radius: 50%;" alt="Author Avatar">
+              <img src="assets/images/image-avatar.webp" alt="Author Avatar" class="author-avatar">
             </div>
             <div class="author-name">P Nino Pratama</div>
         </div>
