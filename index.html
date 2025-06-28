@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS Foundations</title>
     <style>
+        a.kinda-link:hover { cursor: pointer;color: #f4d04e; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'figtree', sans-serif;
             background-color: #f4d04e;
             display: flex;
             justify-content: center;
@@ -18,12 +19,16 @@
         
         .card {
             background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-right: 10px solid #0b0b0b;
+            border-bottom: 10px solid #0b0b0b;
+            border-left: 1px solid #0b0b0b;
+            border-top: 1px solid #0b0b0b;
+            border-radius: 25px;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 350px;
-            padding: 24px;
-            box-sizing: border-box;
+            padding: 1em;
+            box-sizing: border-box
         }
         
         .learning-badge {
@@ -71,20 +76,24 @@
         
         .author-name {
             font-weight: bold;
+            font-family: 'figtree', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: bold;
             color: #333;
         }
     </style>
 </head>
 <body>
     <div class="card">
-      <img src="assets/images/illustration-article.svg" alt="HTML & CSS Foundations" style="width: 100%; border-radius: 12px; margin-bottom: 16px;">
+      <img src="assets/images/illustration-article.svg" style="width: 100%; border-radius: 12px; margin-bottom: 16px;">
         <div class="learning-badge">Learning</div>
         <div class="published-date">Published 18 June 2025</div>
-        <h1>HTML & CSS foundations</h1>
+        <h1> 
+            <a class='kinda-link' onclick='whatevs()'>HTML & CSS Foundation</a>
+        </h1>
         <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
         <div class="author">
             <div class="author-avatar">
-              <img src="assets/images/favicon-32x32.png" style="width: 100%; height: 100%; border-radius: 50%;" alt="Author Avatar">
+              <img src="assets/images/image-avatar.webp" style="width: 100%; height: 100%; border-radius: 50%;" alt="Author Avatar">
             </div>
             <div class="author-name">P Nino Pratama</div>
         </div>
